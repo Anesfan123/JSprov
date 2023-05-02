@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+ 
+    <script>
+        // FRÅGA 1
+        function fråga(){
+            let parameter1 = parseInt(prompt("Skriv ett nummer eller tal: "));
+            let parameter2 = parseInt(prompt("Skriv ett till nummer eller tal: "));
+
+            let summa = parameter1 + parameter2;
+            alert(summa);
+        }
+        fråga()
+
+    </script>
+    <!--Fråga 2-->
+    <p id="demo">Yeeeeeyyyy</p>
+    <button onclick="document.getElementById('demo').innerHTML = 'HEJ'">Klicka mig</button>
+
+    <!--Fråga 3-->
+    <br>
+    <img id="bild"src="kemo.jpg" alt="hej" >
+    <script>
+        function nyBild(){
+            document.getElementById('bild').src = 'space.jpg'
+        }
+        nyBild()
+    </script>
+
+    <!--Fråga 4 -->
+    <script>
+        function arrays(){
+            let arrayOG = ["14","22","33","44"];
+            console.log(arrayOG);
+            let arrayNY = [];
+            for(i - 0; i < arrayOG.lenght; i++){
+                arrayNY.push(arrayOG[i] - 1); 
+            } 
+            console.log(arrayNY);
+        }
+        arrays();
+    </script>
+
+    <!--Fråga 5-->
+    <br>
+    <form name="mittForm">
+        <label for="namn">Namn</label>
+        <input type="text" name="Namn" id="namn">
+        <input type="button" value="submit" onclick = "värde()">
+    </form>
+    
+
+    <script>
+        function värde(){
+            var formnamn = document.forms["mittForm"]["Namn"].value;
+
+            alert(formnamn)
+        }
+        värde()
+    </script>
+
+
+
+    
+</body>
+</html>
